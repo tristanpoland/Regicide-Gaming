@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center">Simple Web Page</h1>
+      <h1 class="text-center">Log in to your account.</h1>
       <div id="messageBox" class="jumbotron">
         You are not logged in. Get outta here! Shoo! >:S
       </div>
@@ -56,7 +56,7 @@
         oktaSignIn.session.get(function (res) {
           // If we get here, the user is already signed in.
           if (res.status === 'ACTIVE') {
-            document.getElementById("messageBox").innerHTML = "Hello, " + res.login + "! You are *still* logged in! :)";
+            document.getElementById("messageBox").innerHTML = "Hello, " + res.login + "! You are still logged in! :)";
             return;
           }
           oktaSignIn.renderEl(
